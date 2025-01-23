@@ -1,3 +1,5 @@
+# server/models.py
+
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import MetaData
 from sqlalchemy_serializer import SerializerMixin
@@ -72,4 +74,3 @@ class User(db.Model, SerializerMixin):
 
     def __repr__(self):
         return f"<User ({self.id}) {self.name}>"
-
